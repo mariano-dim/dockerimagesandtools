@@ -43,3 +43,16 @@ docker push marianodim/dockerimagesandtools:php-0.0.1
 ```
 
 
+## Para tener en cuenta
+
+Para que funcione el login a Docker Hub dentro de docker (si es que no funciona), se debe dar permisos al socket de docker
+Como este socket esta compartido como volumen, se puede modificar desde dentro del container
+
+```
+sudo chmod 666 /var/run/docker.sock
+```
+
+Solucion propuesta desde
+
+https://stackoverflow.com/questions/48957195/how-to-fix-docker-got-permission-denied-issue
+https://docs.docker.com/engine/install/linux-postinstall/
