@@ -11,8 +11,8 @@ services:
       - /home/madim/Escritorio/projects/bnbhold:/app
     environment:
       - GH_REPOSITORY=https://github.com/mariano-dim/bnbhold
-      - GH_RUNNER_TOKEN=AAVPUPZ6EI7JG4GP6QL7BTTA7SLMW
+      - GH_RUNNER_TOKEN=AAVPUP74JIQURCVEPXJITC3A7WRW2
       - GH_RUNNER_LABELS=node
     restart: unless-stopped
 
-    
+    # ./config.sh --url https://github.com/mariano-dim/bnbhold --token AAVPUP74JIQURCVEPXJITC3A7WRW2
